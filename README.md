@@ -55,6 +55,7 @@ Este proyecto consiste en el desarrollo de una aplicación móvil educativa para
 |   |-- calendar_event.dart
 |-- main.dart
 |-- ...
+```
 ## Requisitos del Sistema
 - **Plataformas Soportadas:**
   - Android (versión X.X.X o superior)
