@@ -1,4 +1,6 @@
-# Aplicación Móvil Educativa para Instituto Carlos Fermín Fitzcarrald
+# Aplicación Móvil 
+# Institución Educativa Carlos Fermín Fitzcarrald
+## Puerto Malonado
 
 ## Descripción del Proyecto
 Este proyecto consiste en el desarrollo de una aplicación móvil educativa para la institución "Carlos Fermín Fitzcarrald" en Puerto Maldonado. La aplicación tiene como objetivo facilitar la comunicación entre estudiantes, profesores y administradores, así como proporcionar acceso a recursos educativos y herramientas útiles para la comunidad educativa.
