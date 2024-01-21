@@ -18,13 +18,44 @@ class DescripccionSeccion extends StatelessWidget {
           SizedBox(height: 20),
           Row(
             children: [
+              Text(
+                "Duración del Nivel  ",
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
               Icon(
                 Icons.timer,
                 color: Color(0xFF631919),
               ),
-              SizedBox(width: 5),
+              SizedBox(height: 5),
               Text(
                 "5 años",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          Row(
+            children: [
+              Text(
+                "Puntuación  ",
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.amber,
+              ),
+              SizedBox(width: 5),
+              Text(
+                "3.5",
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
