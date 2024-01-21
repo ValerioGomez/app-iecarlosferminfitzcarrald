@@ -2,7 +2,6 @@ import 'package:colegio_fitzcarrald/widgets/seccionDescrip.dart';
 import 'package:colegio_fitzcarrald/widgets/seccionCursos.dart';
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class pantallaCursos extends StatefulWidget {
   String img;
   pantallaCursos(this.img);
@@ -50,7 +49,7 @@ class _pantallaCursosEstado extends State<pantallaCursos> {
                 borderRadius: BorderRadius.circular(20),
                 color: Color(0xFFF5F3FF),
                 image: DecorationImage(
-                  image: AssetImage("imagenes/${widget.img}.png"),
+                  image: AssetImage("assets/imagenes/${widget.img}.png"),
                 ),
               ),
               child: Center(

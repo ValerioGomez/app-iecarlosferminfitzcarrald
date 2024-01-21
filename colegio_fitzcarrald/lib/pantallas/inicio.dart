@@ -1,4 +1,7 @@
 import 'package:colegio_fitzcarrald/pantallas/cursos.dart';
+import 'package:colegio_fitzcarrald/pantallas/logros.dart';
+import 'package:colegio_fitzcarrald/pantallas/pdf.dart';
+import 'package:colegio_fitzcarrald/pantallas/pantallaLogros.dart';
 import 'package:flutter/material.dart';
 
 class Inicio extends StatelessWidget {
@@ -127,26 +130,52 @@ class Inicio extends StatelessWidget {
                     childAspectRatio: 1.1,
                   ),
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                              color: catColores[index], shape: BoxShape.circle),
-                          child: Center(
-                            child: catIconos[index],
+                    return InkWell(
+                      onTap: () {
+                        // Aquí añade la lógica de navegación para cada ícono.
+                        switch (index) {
+                          case 0:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PdfScreen(),
+                              ),
+                            );
+                            break;
+                          case 1:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => pantallaLogros(),
+                              ),
+                            );
+                            break;
+                          // ... Repite para otros casos según sea necesario.
+                        }
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                                color: catColores[index],
+                                shape: BoxShape.circle),
+                            child: Center(
+                              child: catIconos[index],
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 10),
-                        Text(
-                          catNombres[index],
-                          style: TextStyle(
+                          SizedBox(height: 10),
+                          Text(
+                            catNombres[index],
+                            style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
-                              color: Colors.black.withOpacity(0.6)),
-                        ),
-                      ],
+                              color: Colors.black.withOpacity(0.6),
+                            ),
+                          ),
+                        ],
+                      ),
                     );
                   },
                 ),
@@ -198,7 +227,7 @@ class Inicio extends StatelessWidget {
                             Padding(
                               padding: EdgeInsets.all(10),
                               child: Image.asset(
-                                "imagenes/${imgList[index]}.png",
+                                "assets/imagenes/${imgList[index]}.png",
                                 width: 100,
                                 height: 100,
                               ),

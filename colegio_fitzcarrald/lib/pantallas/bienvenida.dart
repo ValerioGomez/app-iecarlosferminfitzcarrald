@@ -33,7 +33,7 @@ class pantallaBienvenida extends StatelessWidget {
                   ),
                   child: Center(
                     child: Image.asset(
-                      "imagenes/logo.png",
+                      "assets/imagenes/logo.png",
                       scale: 0.1,
                     ),
                   ),
