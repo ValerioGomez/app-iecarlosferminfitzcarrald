@@ -56,13 +56,7 @@ class _pantallaCursosEstado extends State<pantallaCursos> {
                 child: Container(
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: Colors.white,
                     shape: BoxShape.circle,
-                  ),
-                  child: Icon(
-                    Icons.play_arrow_rounded,
-                    color: Color.fromARGB(255, 99, 25, 25),
-                    size: 45,
                   ),
                 ),
               ),
@@ -108,7 +102,7 @@ class _pantallaCursosEstado extends State<pantallaCursos> {
                       },
                       child: Container(
                         padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                         child: Text(
                           "Cursos",
                           style: TextStyle(
@@ -133,7 +127,7 @@ class _pantallaCursosEstado extends State<pantallaCursos> {
                       },
                       child: Container(
                         padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                         child: Text(
                           "Descripcion",
                           style: TextStyle(

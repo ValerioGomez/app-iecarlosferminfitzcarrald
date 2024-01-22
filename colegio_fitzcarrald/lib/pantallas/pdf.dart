@@ -5,7 +5,7 @@ class PdfScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PDF Screen'),
+        title: Text('atrás'),
       ),
       body: Center(
         child: Column(

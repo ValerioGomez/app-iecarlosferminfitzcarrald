@@ -21,10 +21,6 @@ class CursosSeccion extends StatelessWidget {
           leading: Container(
             padding: EdgeInsets.all(5),
             decoration: BoxDecoration(
-              //color: index == 0
-              //? Color(0xFF631919)
-              //: Color(0xFF631919).withOpacity(0.6),
-
               color: Color(0xFF631919),
               shape: BoxShape.circle,
             ),

@@ -1,7 +1,9 @@
+import 'package:colegio_fitzcarrald/pantallas/consultas.dart';
 import 'package:colegio_fitzcarrald/pantallas/cursos.dart';
+import 'package:colegio_fitzcarrald/pantallas/documentos.dart';
 import 'package:colegio_fitzcarrald/pantallas/logros.dart';
+import 'package:colegio_fitzcarrald/pantallas/nuestrosCursos.dart';
 import 'package:colegio_fitzcarrald/pantallas/pdf.dart';
-import 'package:colegio_fitzcarrald/pantallas/pantallaLogros.dart';
 import 'package:flutter/material.dart';
 
 class Inicio extends StatelessWidget {
@@ -9,7 +11,7 @@ class Inicio extends StatelessWidget {
     "Areas",
     "Clases",
     "Documentos",
-    "Biblioteca",
+    "Consultas",
     "Cursos",
     "Logros",
   ];
@@ -40,10 +42,10 @@ class Inicio extends StatelessWidget {
   ];
 
   List imgDescripcionList = [
-    '10 Cursos',
-    '05 Cursos',
-    '20 Areas',
-    '15 Cursos',
+    'Primaria',
+    'Secundaria',
+    'CEBA',
+    'Areas Técnicas',
   ];
 
   @override
@@ -142,7 +144,7 @@ class Inicio extends StatelessWidget {
                               ),
                             );
                             break;
-                          case 1:
+                          case 5:
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -150,7 +152,30 @@ class Inicio extends StatelessWidget {
                               ),
                             );
                             break;
-                          // ... Repite para otros casos según sea necesario.
+                          case 4:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => todoslosCursos(),
+                              ),
+                            );
+                            break;
+                          case 2:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DocumentosScreen(),
+                              ),
+                            );
+                            break;
+                          case 3:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => TuPantalla(),
+                              ),
+                            );
+                            break;
                         }
                       },
                       child: Column(
@@ -182,8 +207,16 @@ class Inicio extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    Icon(
+                      Icons.important_devices,
+                      size:
+                          15, // Ajusta el tamaño del icono según tus necesidades
+                      color: Color(
+                          0xFFFFCF2F), // Cambia el color del icono según tus necesidades
+                    ),
+                    SizedBox(height: 8),
                     Text(
-                      "Areas",
+                      "Niveles",
                       style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.w600,
