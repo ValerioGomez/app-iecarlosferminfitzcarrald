@@ -4,6 +4,7 @@ import 'package:colegio_fitzcarrald/pantallas/documentos.dart';
 import 'package:colegio_fitzcarrald/pantallas/logros.dart';
 import 'package:colegio_fitzcarrald/pantallas/nuestrosCursos.dart';
 import 'package:colegio_fitzcarrald/pantallas/pdf.dart';
+import 'package:colegio_fitzcarrald/pantallas/redes.dart';
 import 'package:flutter/material.dart';
 
 class Inicio extends StatelessWidget {
@@ -37,15 +38,15 @@ class Inicio extends StatelessWidget {
   List imgList = [
     'Primaria',
     'Secundaria',
-    'Tecnicas',
+    'Areas Tecnicas',
     'CEBA',
   ];
 
   List imgDescripcionList = [
     'Primaria',
     'Secundaria',
-    'CEBA',
     'Areas Técnicas',
+    'CEBA',
   ];
 
   @override
@@ -144,6 +145,14 @@ class Inicio extends StatelessWidget {
                               ),
                             );
                             break;
+                          case 1:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => redesSociales(),
+                              ),
+                            );
+                            break;
                           case 5:
                             Navigator.push(
                               context,
@@ -207,14 +216,19 @@ class Inicio extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.important_devices,
-                      size:
-                          15, // Ajusta el tamaño del icono según tus necesidades
-                      color: Color(
-                          0xFFFFCF2F), // Cambia el color del icono según tus necesidades
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.important_devices,
+                          size: 15,
+                          color: Color(0xFFFFCF2F),
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 8),
+                    SizedBox(
+                        width:
+                            8), // Ajusta el espacio entre el icono y el texto según tus necesidades
                     Text(
                       "Niveles",
                       style: TextStyle(
